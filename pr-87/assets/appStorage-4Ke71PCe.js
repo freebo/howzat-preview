@@ -1,1 +1,0 @@
-import{s as t,n as s,p as r,a as n,P as p}from"./previewBuild-CK4Cix-D.js";const a=r(p),g=s(localStorage,a),S=n(window,localStorage,g,a);function E(e,o){return e.storageArea===localStorage&&t(e.key,o,a)}export{g as a,S as b,E as i};
