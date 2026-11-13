@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#152b27" />
+  <title>HOWZAT! — A good day spoiled beautifully.</title>
+  <script type="module" crossorigin src="/howzat-preview/pr-134/assets/sprite-DmzhX8-c.js"></script>
+  <link rel="modulepreload" crossorigin href="/howzat-preview/pr-134/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/howzat-preview/pr-134/assets/phaser-B61OQUcB.js">
+  <link rel="modulepreload" crossorigin href="/howzat-preview/pr-134/assets/previewBuild-6LUTOJje.js">
+  <link rel="modulepreload" crossorigin href="/howzat-preview/pr-134/assets/motion-DMelmlWP.js">
+  <link rel="modulepreload" crossorigin href="/howzat-preview/pr-134/assets/rng-VQFrfh1t.js">
+  <link rel="modulepreload" crossorigin href="/howzat-preview/pr-134/assets/mikeTuning04-BkZv1tYS.js">
+  <link rel="modulepreload" crossorigin href="/howzat-preview/pr-134/assets/commentary03-AoPJq0z1.js">
+  <link rel="stylesheet" crossorigin href="/howzat-preview/pr-134/assets/sprite-aaQRQ9K_.css">
+</head>
+<body>
+  <main class="cabinet">
+    <header class="masthead">
+      <a class="wordmark" href="./index.html" aria-label="Howzat home">HOWZAT<span>!</span><small>THE RIVERSIDE COLLECTION</small></a>
+      <div class="match-heading"><span class="eyebrow">A GOOD DAY SPOILED BEAUTIFULLY.</span><h1>Welcome to Riverside.</h1><p>Cricket. Characters. Questionable queue decisions.</p></div>
+      <div class="edition"><span class="live-dot"></span> MATCH DAY <b>v1.1</b></div>
+    </header>
+    <section class="ground-frame" aria-label="Animated Riverside cricket ground">
+      <div id="stage" role="img" aria-label="Isometric Riverside ground with animated cricket in the foreground, a spectator stand and a concourse"></div>
+      <div id="loading"><span class="loading-ball"></span><strong>Opening the turnstiles…</strong><span>Getting everyone into character.</span></div>
+      <div class="ground-tag"><span class="live-dot"></span> RIVERSIDE <span class="weather">18° · OPTIMISTIC</span></div>
+      <div class="match-ribbon" aria-live="polite"><span id="delivery-label">THE PLAYERS ARE TAKING THEIR PLACES</span></div>
+      <div id="toast" class="toast" aria-live="polite"></div>
+      <button id="fullscreen" class="fullscreen" aria-label="Toggle fullscreen" title="Fullscreen">⛶</button>
+      <div id="run-result" class="run-result" hidden><div class="result-card"><span id="result-kicker" class="eyebrow"></span><h2 id="result-title"></h2><strong id="result-score"></strong><span class="result-points">ARCADE POINTS</span><p id="result-detail"></p><p id="result-quip"></p><div><button id="play-again" class="primary">ANOTHER INNINGS ↗</button><button id="other-mode">TRY THE OTHER MODE</button></div></div></div>
+    </section>
+    <section class="arcade-console" aria-label="Arcade challenge">
+      <div class="console-heading"><div class="mode-switch" aria-label="Game mode"><button data-mode="spectator" aria-pressed="true">THE SPECTATOR</button><button data-mode="batting" aria-pressed="false">THE BATSMAN</button></div><span id="best-score">BEST 0</span></div>
+      <div class="challenge-row"><div class="challenge-copy"><span id="challenge-name" class="eyebrow">THE PERFECT DAY OUT</span><p id="challenge-help"></p></div><div class="challenge-score"><strong id="arcade-score">0</strong><span id="arcade-progress"></span></div><div class="challenge-stats"><span id="arcade-balls"></span><b id="arcade-combo"></b></div><button id="arcade-action" class="primary">START CHALLENGE ↗</button></div>
+      <p id="challenge-feedback" class="challenge-feedback" role="status">Choose your challenge, then start a new run.</p>
+      <div id="spectator-tools" class="spectator-tools"><span id="moment">MIKE IS WATCHING THE CRICKET</span><label>DRINK <meter id="need-drink" min="0" max="100" low="25" high="50" optimum="90" value="65"></meter><b id="value-drink">65</b></label><label>FOOD <meter id="need-food" min="0" max="100" low="25" high="50" optimum="90" value="70"></meter><b id="value-food">70</b></label><label>COMFORT <meter id="need-comfort" min="0" max="100" low="25" high="50" optimum="90" value="80"></meter><b id="value-comfort">80</b></label><span id="cash">£24</span></div>
+      <div id="batting-tools" class="batting-tools" hidden><div class="shot-buttons"><button data-shot="defend">DEFEND <kbd>1</kbd></button><button data-shot="drive">DRIVE <kbd>2</kbd></button><button data-shot="loft">LOFT <kbd>3</kbd></button></div><div class="direction-buttons"><button data-direction="leg">← LEG</button><button data-direction="off">OFF →</button><span id="gap-label">GAP: OFF →</span></div><div class="timing-control"><span id="timing-feedback">WATCH THE MARKER</span><div class="timing-track" aria-label="Shot timing: tap as the moving marker reaches the gold zone"><div class="timing-good"></div><div class="timing-perfect"></div><i id="timing-needle"></i></div></div></div>
+    </section>
+    <section class="control-desk" aria-label="Ground controls">
+      <div class="mike-panel"><span class="portrait-mark">M</span><div><span class="eyebrow">MIKE &amp; JB</span><strong id="mike-status">The usual seats. The usual nonsense.</strong></div></div>
+      <div class="venue-buttons"><button data-venue="bar"><span>🍺</span> The Twelfth Man <kbd>1</kbd></button><button data-venue="food"><span>🥧</span> Beefy’s Burgers <kbd>2</kbd></button><button data-venue="toilets"><span>↗</span> Fine Leg Toilets <kbd>3</kbd></button></div>
+      <button id="tour" class="primary">TAKE A WANDER <span>↗</span></button>
+    </section>
+    <footer><span>20 ORIGINAL CHARACTERS · ONE VERY BRITISH DAY OUT</span><div><button id="cast-toggle">Meet the regulars</button><span class="footer-divider">/</span><button id="pause">Pause</button><span class="footer-divider">/</span><button id="sound" aria-pressed="true">Sound on</button><span class="footer-divider">/</span><output id="performance">Warming up…</output></div></footer>
+    <section id="cast" class="cast-gallery" hidden aria-label="The Riverside regulars"><div class="cast-heading"><h2>A ground full of characters.</h2><p>Every regular has somewhere to be. Usually the bar.</p></div><div id="cast-grid"></div></section>
+  </main>
+</body>
+</html>
