@@ -1,0 +1,1 @@
+import{n as t}from"./mikeTuning04-BkZv1tYS.js";const e="howzat.mike-tuning.v2";function i(r){try{const n=r.getItem(e);return n!==null?t(JSON.parse(n)):t(null)}catch{return t(null)}}function a(r,n){try{return r.setItem(e,JSON.stringify(t(n))),!0}catch{return!1}}export{e as M,i as l,a as s};
