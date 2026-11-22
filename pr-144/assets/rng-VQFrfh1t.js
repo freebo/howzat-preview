@@ -1,0 +1,1 @@
+var u=Object.defineProperty;var l=(t,e,a)=>e in t?u(t,e,{enumerable:!0,configurable:!0,writable:!0,value:a}):t[e]=a;var s=(t,e,a)=>l(t,typeof e!="symbol"?e+"":e,a);class h{constructor(e=20260924){s(this,"value");this.value=e||1}next(){return this.value^=this.value<<13,this.value^=this.value>>>17,this.value^=this.value<<5,(this.value>>>0)/4294967296}}export{h as S};
